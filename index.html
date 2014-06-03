@@ -1,6 +1,16 @@
 <html>
-<head>
-<title>Моя Норвегия</title>
+  <head>
+    <title>РњРѕСЏ РќРѕСЂРІРµРіРёСЏ
+    </title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(function(){
+	$(window).on('hashchange',function(){ 
+		$( "article" ).load( location.hash.slice(1) + ".html" );
+	});
+  $( "article" ).load( location.hash.slice(1) + ".html" );
+});      
+</script>
 <style type="text/css">
 body{
   background-color: #CCFFFF;
@@ -10,6 +20,7 @@ body{
   width: 1000px;
   margin: 0px auto;
   background-color: #FFFFCC;
+  overflow:hidden;
 }
 address{
   font-size: 20px;
@@ -26,43 +37,86 @@ address{
 ul{
   list-style: disc;
 }
-
+nav {
+  width:30%;
+  float:left;
+}
+article {
+  width:70%;
+  float:right;
+}
 
 </style>
-</head>
 
-<body>
-<div id="pad">
-<address>www.all-about-norway.ru</address>
-<img id="img1" src="images/image001.jpg" alt="" />
-<ol>
-<li><a href="about.html">О Норвегии</a></li>
-    <ul>
-    <li><a href="">карта Норвегии</a></li>
-    <li><a href="">Норвегия –страна гор, морей и троллей</a></li>
-    </ul>
-<li><a href="">Национальные символы Норвегии</a></li>
-<li><a href="">Норвежский язык</a></li>
-<li><a href="">Праздники в Норвегии</a></li>
-    <ul>
-    <li><a href="">национальные праздники</a></li>
-    <li><a href="">государственные праздники</a></li>
-    <li><a href="">религиозные праздники</a></li>
-    </ul>
-<li><a href="">Национальный костюм</a></li>
-<li><a href="">Национальная кухня</a></li>
-<li><a href="">Города Норвегии</a></li>
-    <ul>
-    <li><a href="">Осло</a></li>
-    <li><a href="">Бодо</a></li>
-    <li><a href="">Берген</a></li>
-    <li><a href="">Ставангер</a></li>
-    <li><a href="">Тронхейм</a></li>
-    </ul>
-
-</ol>
-
-</div>
-</body>
-
+  </head>
+  <body>
+    <div id="pad">
+      <address>www.all-about-norway.ru
+      </address>
+      <img id="img1" src="images/image001.jpg" alt="" />
+      <nav>
+        <ol>
+          <li>
+          <a href="#about">Рћ РќРѕСЂРІРµРіРёРё</a>
+          </li>    
+          <ul>    
+            <li>
+            <a href="">РєР°СЂС‚Р° РќРѕСЂРІРµРіРёРё</a>
+            </li>    
+            <li>
+            <a href="">СЃС‚СЂР°РЅР° РіРѕСЂ, РјРѕСЂРµР№ Рё С‚СЂРѕР»Р»РµР№</a>
+            </li>    
+          </ul>
+          <li>
+          <a href="">РќР°С†РёРѕРЅР°Р»СЊРЅС‹Рµ СЃРёРјРІРѕР»С‹ РќРѕСЂРІРµРіРёРё</a>
+          </li>
+          <li>
+          <a href="">РќРѕСЂРІРµР¶СЃРєРёР№ СЏР·С‹Рє</a>
+          </li>
+          <li>
+          <a href="">РџСЂР°Р·РґРЅРёРєРё РІ РќРѕСЂРІРµРіРёРё</a>
+          </li>    
+          <ul>    
+            <li>
+            <a href="">РЅР°С†РёРѕРЅР°Р»СЊРЅС‹Рµ РїСЂР°Р·РґРЅРёРєРё</a>
+            </li>    
+            <li>
+            <a href="">РіРѕСЃСѓРґР°СЂСЃС‚РІРµРЅРЅС‹Рµ РїСЂР°Р·РґРЅРёРєРё</a>
+            </li>    
+            <li>
+            <a href="">СЂРµР»РёРіРёРѕР·РЅС‹Рµ РїСЂР°Р·РґРЅРёРєРё</a>
+            </li>    
+          </ul>
+          <li>
+          <a href="">РќР°С†РёРѕРЅР°Р»СЊРЅС‹Р№ РєРѕСЃС‚СЋРј</a>
+          </li>
+          <li>
+          <a href="">РќР°С†РёРѕРЅР°Р»СЊРЅР°СЏ РєСѓС…РЅСЏ</a>
+          </li>
+          <li>
+          <a href="">Р“РѕСЂРѕРґР° РќРѕСЂРІРµРіРёРё</a>
+          </li>    
+          <ul>    
+            <li>
+            <a href="">РћСЃР»Рѕ</a>
+            </li>    
+            <li>
+            <a href="">Р‘РѕРґРѕ</a>
+            </li>    
+            <li>
+            <a href="">Р‘РµСЂРіРµРЅ</a>
+            </li>    
+            <li>
+            <a href="">РЎС‚Р°РІР°РЅРіРµСЂ</a>
+            </li>    
+            <li>
+            <a href="">РўСЂРѕРЅС…РµР№Рј</a>
+            </li>    
+          </ul>
+        </ol>
+      </nav>
+      <article>
+      </article>
+    </div>
+  </body>
 </html>
