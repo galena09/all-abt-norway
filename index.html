@@ -7,7 +7,8 @@ $(function(){
 	$(window).on('hashchange',function(){ 
 		$( "article" ).load( location.hash.slice(1) + ".html" );
 	});
-  $( "article" ).load( location.hash.slice(1) + ".html" );
+  var hash = location.hash ? location.hash.slice(1) : 'about';
+  $( "article" ).load( hash + ".html" );
 });      
 </script>
 <style type="text/css">
