@@ -4,12 +4,12 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>
 $(function(){
-	$(window).on('hashchange',function(){ 
+	$(window).on('hashchange',function(){
 		$( "article" ).load( location.hash.slice(1) + ".html" );
 	});
   var hash = location.hash ? location.hash.slice(1) : 'about';
   $( "article" ).load( hash + ".html" );
-});      
+});
 </script>
 <style type="text/css">
 body{
