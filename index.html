@@ -1,151 +1,163 @@
-﻿<html>
-  <head>
+﻿
+<html>
+
+<head>
     <title>Моя Норвегия</title>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>
-$(function(){
-	$(window).on('hashchange',function(){
-		$( "article" ).load( location.hash.slice(1) + ".html" );
-	});
-  var hash = location.hash ? location.hash.slice(1) : 'about';
-  $( "article" ).load( hash + ".html" );
-});
-</script>
-<style type="text/css">
-body{
-  background-color: #CCFFFF;
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+        	$(window).on('hashchange',function(){
+        		$( "article" ).load( location.hash.slice(1) + ".html" );
+        	});
+          var hash = location.hash ? location.hash.slice(1) : 'about';
+          $( "article" ).load( hash + ".html" );
+        });
+    </script>
+    <style type="text/css">
+        body{
+          background-color: #CCFFFF;        
+        }
+        #pad{
+          width: 1000px;
+          margin: 0px auto;
+          background-color: #FFFFCC;
+          overflow:hidden;
+        }
+        address{
+          font-size: 20px;
+          font-style: normal;
+          font-weight: bold;
+          color: #000099;
+          text-indent: 40px;
+          padding: 10px 0px;
+        }
+        #img1{
+          width: 1000px;
+          height: 300px;
+        }
+        ul{
+          list-style: disc;
+        }
+        nav {
+          width:30%;
+          float:left;
+        }
+        article {
+          width:70%;
+          float:right;
+          padding: 10px;
+            box-sizing:border-box;
+        }
+        article img {
+                padding: 10px;
+        }
+        p {
+            clear:both;
+        }
+    </style>
 
-}
-#pad{
-  width: 1000px;
-  margin: 0px auto;
-  background-color: #FFFFCC;
-  overflow:hidden;
-}
-address{
-  font-size: 20px;
-  font-style: normal;
-  font-weight: bold;
-  color: #000099;
-  text-indent: 40px;
-  padding: 10px 0px;
-}
-#img1{
-  width: 1000px;
-  height: 300px;
-}
-ul{
-  list-style: disc;
-}
-nav {
-  width:30%;
-  float:left;
-}
-article {
-  width:70%;
-  float:right;
-}
+</head>
 
-</style>
-
-  </head>
-  <body>
+<body>
     <div id="pad">
-      <address>www.all-about-norway.ru
-      </address>
-      <img id="img1" src="images/image001.jpg" alt="" />
-      <nav>
-        <ol>
-          <li>
-          <a href="#1-about">О Норвегии</a>
-          </li>
-          <ul>
-            <li>
-            <a href="#2-map">карта Норвегии</a>
-            </li>
-            <li>
-            <a href="#3-gori-trolli">страна гор, морей и троллей</a>
-            </li>
-          </ul>
-          <li>
-          <a href="#4-national-sym">Национальные символы Норвегии</a>
-          </li>
-          <li>
-          <a href="#5-language">Норвежский язык</a>
-          </li>
-          <li>
-          <a href="#6-holidays-in-norway">Праздники в Норвегии</a>
-          </li>    
-          <ul>    
-            <li>
-            <a href="#7-national-hol">национальные праздники</a>
-            </li>    
-            <li>
-            <a href="#8-state-hol">государственные праздники</a>
-            </li>    
-            <li>
-            <a href="#9-relig-hol">религиозные праздники</a>
-            </li>    
-          </ul>
-          <li>
-          <a href="#10-bunad">Национальный костюм</a>
-          </li>
-          <li>
-          <a href="#11-cooking">Национальная кухня</a>
-          </li>
-          <li>
-          <a href="#12-cities">Города Норвегии</a>
-          </li>    
-          <ul>    
-            <li>
-            <a href="#13-oslo">Осло</a>
-            </li>
-            <li>
-            <a href="#14-bodo">Бодо</a>
-            </li>
-            <li>
-            <a href="#15-bergen">Берген</a>
-            </li>
-            <li>
-            <a href="#16-stavanger">Ставангер</a>
-            </li>
-            <li>
-            <a href="#17-tronheim">Тронхейм</a>
-            </li>    
-          </ul>
-           <li>
-          <a href="#18-education">Образование Норвегии</a>
-          </li>
-          <ul>
-            <li>
-            <a href="#19-educ-bodo">Университет Норланда в Бодо</a>
-            </li>
-          </ul> <li>
-          <a href="#20-museums-norway">Музеи Норвегии</a>
-          </li>
-          <ul>
-            <li>
-            <a href="#21-museums-oslo">музеи Осло</a>
-            </li>
-            <li>
-            <a href="#22-museums-trondheim">музеи Тронхейма</a>
-            </li>
-          </ul> <li>
-          <a href="#23-sport-norway">Спорт Норвегии</a>
-          </li>
-          <ul>
-            <li>
-            <a href="#24-sport-traditions">лыжные традиции</a>
-            </li>
-            <li>
-            <a href="#25-sport-cities">лыжние курорты</a>
-            </li>
-          </ul>
-        </ol>
-      </nav>
-      <article>
-      Использование материалов с данного сайта разрешено только с ссылкой на сайт.2014.
-      </article>
+        <address>www.all-about-norway.ru
+        </address>
+        <img id="img1" src="images/image001.jpg" alt="" />
+        <nav>
+            <ol>
+                <li>
+                    <a href="#1-about">О Норвегии</a>
+                </li>
+                <ul>
+                    <li>
+                        <a href="#2-map">карта Норвегии</a>
+                    </li>
+                    <li>
+                        <a href="#3-gori-trolli">страна гор, морей и троллей</a>
+                    </li>
+                </ul>
+                <li>
+                    <a href="#4-national-sym">Национальные символы Норвегии</a>
+                </li>
+                <li>
+                    <a href="#5-language">Норвежский язык</a>
+                </li>
+                <li>
+                    <a href="#6-holidays-in-norway">Праздники в Норвегии</a>
+                </li>
+                <ul>
+                    <li>
+                        <a href="#7-national-hol">национальные праздники</a>
+                    </li>
+                    <li>
+                        <a href="#8-state-hol">государственные праздники</a>
+                    </li>
+                    <li>
+                        <a href="#9-relig-hol">религиозные праздники</a>
+                    </li>
+                </ul>
+                <li>
+                    <a href="#10-bunad">Национальный костюм</a>
+                </li>
+                <li>
+                    <a href="#11-cooking">Национальная кухня</a>
+                </li>
+                <li>
+                    <a href="#12-cities">Города Норвегии</a>
+                </li>
+                <ul>
+                    <li>
+                        <a href="#13-oslo">Осло</a>
+                    </li>
+                    <li>
+                        <a href="#14-bodo">Бодо</a>
+                    </li>
+                    <li>
+                        <a href="#15-bergen">Берген</a>
+                    </li>
+                    <li>
+                        <a href="#16-stavanger">Ставангер</a>
+                    </li>
+                    <li>
+                        <a href="#17-tronheim">Тронхейм</a>
+                    </li>
+                </ul>
+                <li>
+                    <a href="#18-education">Образование Норвегии</a>
+                </li>
+                <ul>
+                    <li>
+                        <a href="#19-educ-bodo">Университет Норланда в Бодо</a>
+                    </li>
+                </ul>
+                <li>
+                    <a href="#20-museums-norway">Музеи Норвегии</a>
+                </li>
+                <ul>
+                    <li>
+                        <a href="#21-museums-oslo">музеи Осло</a>
+                    </li>
+                    <li>
+                        <a href="#22-museums-trondheim">музеи Тронхейма</a>
+                    </li>
+                </ul>
+                <li>
+                    <a href="#23-sport-norway">Спорт Норвегии</a>
+                </li>
+                <ul>
+                    <li>
+                        <a href="#24-sport-traditions">лыжные традиции</a>
+                    </li>
+                    <li>
+                        <a href="#25-sport-cities">лыжние курорты</a>
+                    </li>
+                </ul>
+            </ol>
+        </nav>
+        <article>
+            Использование материалов с данного сайта разрешено только с ссылкой на сайт.2014.
+        </article>
     </div>
-  </body>
+</body>
+
 </html>
