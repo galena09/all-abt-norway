@@ -1,4 +1,4 @@
-﻿
+
 <html>
 
 <head>
@@ -9,7 +9,7 @@
         	$(window).on('hashchange',function(){
         		$( "article" ).load( location.hash.slice(1) + ".html" );
         	});
-          var hash = location.hash ? location.hash.slice(1) : 'about';
+          var hash = location.hash ? location.hash.slice(1) : '1-about';
           $( "article" ).load( hash + ".html" );
         });
     </script>
@@ -155,9 +155,11 @@
             </ol>
         </nav>
         <article>
-            Использование материалов с данного сайта разрешено только с ссылкой на сайт.2014.
         </article>
     </div>
+    <footer>
+            Использование материалов с данного сайта разрешено только с ссылкой на сайт.2014.
+    </footer>
 </body>
 
 </html>
